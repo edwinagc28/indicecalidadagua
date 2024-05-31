@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Air Pollution Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div id="header">
+      <img src="https://media.istockphoto.com/id/1969862215/es/foto/concepto-de-energ%C3%ADa-de-hidr%C3%B3geno-ideas-de-inversi%C3%B3n-sostenible-inversi%C3%B3n-ahorrar-dinero.jpg?s=612x612&w=0&k=20&c=bQkiB6HT0ajNIYSTaHBBvEiIt-9-LDKf8WEpNzQEdWA=" alt="EIA Logo" id="eia-logo">
+      <h1>Air Pollution in Mining Operations</h1>
+    </div>
+    <div id="data-input">
+      <h2>Enter Data:</h2>
+      <label for="pollutant">Pollutant:</label>
+      <select id="pollutant">
+        <option value="PM2.5">PM2.5</option>
+        <option value="Ozone">Ozone</option>
+        <option value="SO2">SO2</option>
+        <option value="NO2">NO2</option>
+        <option value="CO">CO</option>
+      </select>
+      <br>
+      <label for="concentration">Concentration:</label>
+      <input type="number" id="concentration" placeholder="Enter concentration value">
+      <br>
+      <button onclick="calculateAQI()">Calculate AQI</button>
+    </div>
+    <div id="results">
+      <h2>Air Quality Index (AQI):</h2>
+      <img id="aqi-image" src="https://media.istockphoto.com/id/1326488640/es/foto/mina-de-carb%C3%B3n.jpg?s=612x612&w=0&k=20&c=DAPYQo-W786MVzY_2NkSTEnmoqkLl3lbXuiXOsfkgXM=" alt="Air Pollution Caused by Mining">
+      <p id="aqi-value"></p>
+      <p id="aqi-category"></p>
+      <p id="aqi-health-effects"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
